@@ -2,8 +2,15 @@
 %html
   %head
     %title Todo
-    = stylesheet_link_tag :all
+    = stylesheet_link_tag 'compiled/screen' 
     = javascript_include_tag :defaults
     = csrf_meta_tag
-  %body
+  %body.content
+    #notification
+      -if flash[:notice]
+        .notice= flash[:notice]
+      -if flash[:alert]
+        .alert= flash[:alert] 
+      -if flash[:error]
+        .error= flash[:error]
     = yield

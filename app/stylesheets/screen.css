@@ -222,11 +222,3 @@ section.content-sub {
 #notification .notice {
   color: #4f8a10;
   background-color: #dff2bf; }
-
-.task form.button_to {
-  display: inline; }
-  .task form.button_to * {
-    display: inline; }
-
-ul#complete li.task {
-  text-decoration: line-through; }

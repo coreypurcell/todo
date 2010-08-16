@@ -1,0 +1,17 @@
+%h2= @list.name
+%p= @list.description
+
+%h3 Incomplete Tasks
+%ul#incomplete
+  = render @list.tasks.incomplete 
+%h3 Completed Tasks
+%ul#complete
+  = render @list.tasks.completed 
+
+
+= form_for [@list, @task], :remote => true do |f|
+  %p
+    ~f.text_field :description
+    ~f.submit
+%hr
+= link_to "Back to list index", lists_path

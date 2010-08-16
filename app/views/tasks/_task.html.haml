@@ -1,0 +1,4 @@
+-content_tag_for(:li, task) do 
+  = "#{task.description}" 
+  = button_to "Complete", complete_task_path(@list.id, task.id), :remote => true unless task.completed?
+
