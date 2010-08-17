@@ -223,10 +223,8 @@ section.content-sub {
   color: #4f8a10;
   background-color: #dff2bf; }
 
-.task form.button_to {
+.task form.mark_complete {
   display: inline; }
-  .task form.button_to * {
-    display: inline; }
 
 ul#complete li.task {
   text-decoration: line-through; }
