@@ -11,7 +11,7 @@ class TasksController < ApplicationController
     else
       flash[:error] = "Could not add task"
     end
-    respond_with ( @task, :location => list_path(@list) )
+    respond_with( @task, :location => list_path(@list) )
   end
 
   def complete
@@ -19,6 +19,6 @@ class TasksController < ApplicationController
     @task = @list.tasks.find(params[:id])
     @task.completed = true
     @task.save
-    respond_with ( @task, :location => list_path(@list) )
+    respond_with( @task, :location => list_path(@list) )
   end
 end

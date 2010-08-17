@@ -6,10 +6,10 @@ gem 'rails', '3.0.0.rc'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem "haml", ">= 3.0.12"
-  gem "haml-rails"
 end
 
+gem "haml", ">= 3.0.12"
+gem "haml-rails"
 # Use unicorn as the web server
 # gem 'unicorn'
 

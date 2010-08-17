@@ -1,4 +1,7 @@
--content_tag_for(:li, task) do 
+=content_tag_for(:li, task) do 
+  - unless task.completed?
+    = form_tag complete_task_path(@list.id, task.id), :class => "mark_complete", :remote => true do
+      = check_box_tag "complete", "1", false, "data-remote".to_sym => true, :action => complete_task_path(@list.id, task.id)
   = "#{task.description}" 
-  = button_to "Complete", complete_task_path(@list.id, task.id), :remote => true unless task.completed?
+  
 
