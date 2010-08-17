@@ -49,7 +49,6 @@ Todo::Application.configure do
 
   Sass::Plugin.options[:always_check] = false
   Sass::Plugin.options.merge!(:cache => true, :never_update => true) 
-  Sass::Plugin.update_stylesheets 
   
 
 end
