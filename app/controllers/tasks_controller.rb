@@ -23,7 +23,7 @@ class TasksController < ApplicationController
   def update
     @list = List.find(params[:list_id])
     @task = @list.tasks.find(params[:id])
-    if @task.save
+    if @task.update_attributes(params[:task])
       flash[:notice] = "Task updated"
     else
       flash[:error] = "Could not update task"
