@@ -7,6 +7,7 @@ gem 'rails', '3.0.0.rc'
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem "haml", ">= 3.0.12"
+  gem "haml-rails"
 end
 
 # Use unicorn as the web server
