@@ -8,3 +8,12 @@
   background-color: $color 
   border: 1px solid $border 
 
+=pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px)
+  margin-left: 0
+  li.bullet
+    background: image-url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2
+  li
+    list-style-type: none
+    padding-left: $padding
+    
+

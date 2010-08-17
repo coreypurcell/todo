@@ -1,0 +1,9 @@
+%h1 Edit your To do
+=form_for [@list, @task] do |f|
+  %ul 
+    %li
+      =f.text_field :description, :placeholder => "To do"
+    %li.bullet
+      =f.text_field :tag_list, :placeholder => "Tags"
+  %p
+    =f.submit 

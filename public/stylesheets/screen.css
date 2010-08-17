@@ -381,6 +381,7 @@ section.content-sub {
 /* line 7, ../../app/stylesheets/screen.sass */
 .task {
   width: 100%;
+  list-style-type: none;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -394,17 +395,17 @@ section.content-sub {
   -o-box-shadow: #333333 1px 1px 2px 0;
   box-shadow: #333333 1px 1px 2px 0;
 }
-/* line 11, ../../app/stylesheets/screen.sass */
+/* line 12, ../../app/stylesheets/screen.sass */
 .task form.mark_complete {
   display: inline;
 }
-/* line 13, ../../app/stylesheets/screen.sass */
+/* line 14, ../../app/stylesheets/screen.sass */
 .task ul.tags {
   display: inline;
   float: right;
   margin-top: 2px;
 }
-/* line 17, ../../app/stylesheets/screen.sass */
+/* line 18, ../../app/stylesheets/screen.sass */
 .task ul.tags li {
   display: inline;
   list-style-type: none;
@@ -419,7 +420,21 @@ section.content-sub {
   border: 1px solid #bccaf0;
 }
 
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 24, ../../app/stylesheets/screen.sass */
+form.edit_task ul {
+  margin-left: 0;
+}
+/* line 13, ../../app/stylesheets/_mixins.sass */
+form.edit_task ul li.bullet {
+  background: url('/images/tags.png?1282061111') no-repeat 5.5px 3px;
+}
+/* line 15, ../../app/stylesheets/_mixins.sass */
+form.edit_task ul li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+/* line 27, ../../app/stylesheets/screen.sass */
 ul#complete li.task {
   text-decoration: line-through;
 }
