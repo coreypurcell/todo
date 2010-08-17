@@ -11,6 +11,9 @@
   +box-shadow(#333,1px,1px,2px)
   form.mark_complete
     display: inline
+  img
+    padding-left: 5px
+    padding-right: 5px
   ul.tags
     display: inline
     float: right
@@ -22,7 +25,29 @@
       @include box(rgb(231,235,249),rgb(188,202,240), 7px, 4px, 0)
 
 form.edit_task ul
-  +pretty-bullets("tags.png", 14px, 14px, 20px, 25px)
+  width: 100%
+  +tags-bullet(14px, 14px, 20px, 25px)
+  +notes-bullet(14px, 14px, 20px, 25px)
+  input, textarea
+    width: 100%
+  input[type=submit]
+    margin-left: 25px
+
 
 ul#complete li.task
   text-decoration: line-through
+
+.task .notes
+  display: none
+
+form.new_task
+  textarea
+    width: 351px
+    height: 40px
+  input[type=text]
+    width: 350px
+  ul
+    +tags-bullet(14px, 14px, 20px, 25px)
+    +notes-bullet(14px, 14px, 20px, 25px)
+
+    

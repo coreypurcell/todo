@@ -10,9 +10,14 @@
 
 
 = form_for [@list, @task], :remote => true do |f|
-  %p
-    ~f.text_field :description, :placeholder => "New to do"
-    =f.text_field :tag_list, :placeholder => "Tags"
-    ~f.submit
+  %ul
+    %li
+      ~f.text_field :description, :placeholder => "New to do"
+    %li.tags
+      =f.text_field :tag_list, :placeholder => "Tags"
+    %li.notes
+      =f.text_area :notes, :placehoder => "Notes"
+    %li
+      =f.submit
 %hr
 = link_to "Back to list index", lists_path

@@ -400,12 +400,17 @@ section.content-sub {
   display: inline;
 }
 /* line 14, ../../app/stylesheets/screen.sass */
+.task img {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 17, ../../app/stylesheets/screen.sass */
 .task ul.tags {
   display: inline;
   float: right;
   margin-top: 2px;
 }
-/* line 18, ../../app/stylesheets/screen.sass */
+/* line 21, ../../app/stylesheets/screen.sass */
 .task ul.tags li {
   display: inline;
   list-style-type: none;
@@ -420,12 +425,14 @@ section.content-sub {
   border: 1px solid #bccaf0;
 }
 
-/* line 24, ../../app/stylesheets/screen.sass */
+/* line 27, ../../app/stylesheets/screen.sass */
 form.edit_task ul {
+  width: 100%;
+  margin-left: 0;
   margin-left: 0;
 }
 /* line 13, ../../app/stylesheets/_mixins.sass */
-form.edit_task ul li.bullet {
+form.edit_task ul li.tags {
   background: url('/images/tags.png?1282061111') no-repeat 5.5px 3px;
 }
 /* line 15, ../../app/stylesheets/_mixins.sass */
@@ -433,8 +440,63 @@ form.edit_task ul li {
   list-style-type: none;
   padding-left: 25px;
 }
+/* line 21, ../../app/stylesheets/_mixins.sass */
+form.edit_task ul li.notes {
+  background: url('/images/notes.png?1282062393') no-repeat 5.5px 3px;
+}
+/* line 23, ../../app/stylesheets/_mixins.sass */
+form.edit_task ul li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+/* line 31, ../../app/stylesheets/screen.sass */
+form.edit_task ul input, form.edit_task ul textarea {
+  width: 100%;
+}
+/* line 33, ../../app/stylesheets/screen.sass */
+form.edit_task ul input[type=submit] {
+  margin-left: 25px;
+}
 
-/* line 27, ../../app/stylesheets/screen.sass */
+/* line 37, ../../app/stylesheets/screen.sass */
 ul#complete li.task {
   text-decoration: line-through;
+}
+
+/* line 40, ../../app/stylesheets/screen.sass */
+.task .notes {
+  display: none;
+}
+
+/* line 44, ../../app/stylesheets/screen.sass */
+form.new_task textarea {
+  width: 351px;
+  height: 40px;
+}
+/* line 47, ../../app/stylesheets/screen.sass */
+form.new_task input[type=text] {
+  width: 350px;
+}
+/* line 49, ../../app/stylesheets/screen.sass */
+form.new_task ul {
+  margin-left: 0;
+  margin-left: 0;
+}
+/* line 13, ../../app/stylesheets/_mixins.sass */
+form.new_task ul li.tags {
+  background: url('/images/tags.png?1282061111') no-repeat 5.5px 3px;
+}
+/* line 15, ../../app/stylesheets/_mixins.sass */
+form.new_task ul li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+/* line 21, ../../app/stylesheets/_mixins.sass */
+form.new_task ul li.notes {
+  background: url('/images/notes.png?1282062393') no-repeat 5.5px 3px;
+}
+/* line 23, ../../app/stylesheets/_mixins.sass */
+form.new_task ul li {
+  list-style-type: none;
+  padding-left: 25px;
 }

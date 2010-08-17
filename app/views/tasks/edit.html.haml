@@ -3,7 +3,11 @@
   %ul 
     %li
       =f.text_field :description, :placeholder => "To do"
-    %li.bullet
+    %li.tags
       =f.text_field :tag_list, :placeholder => "Tags"
+    %li.notes
+      =f.text_area :notes, :placeholder => "Notes"
   %p
-    =f.submit 
+    = link_to "Cancel", list_path(@list)
+    = " | "
+    = f.submit 
