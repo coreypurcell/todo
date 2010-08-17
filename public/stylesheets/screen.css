@@ -1,0 +1,425 @@
+/* line 14, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p249@todo/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/*
+ *Stuff and Nonsense Ltd.
+ *The Cow Shed Studio,
+ *Gwaenysgor,
+ *Flintshire, North Wales
+ *LL18 6EP, UK
+ *+44 1745 851848
+ *http://stuffandnonsense.co.uk
+ *http://forabeautifulweb.com
+ *http://transcendingcss.com
+ *http://twitter.com/malarkey
+ *
+ *SCREEN.CSS */
+/* BODY ------------------------------------------------------------------ */
+/* line 18, ../../app/stylesheets/_standard.sass */
+body {
+  background-color: #f0f0f0;
+  font: 100%/1.4 Georgia, Times, serif;
+  color: #323232;
+  text-shadow: 0 1px 0 white;
+}
+
+/* HEADINGS -------------------------------------------------------------- */
+/* line 26, ../../app/stylesheets/_standard.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #444444;
+}
+
+/* line 30, ../../app/stylesheets/_standard.sass */
+h1, h2 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  /* 32 / 16 = 2 */
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* line 37, ../../app/stylesheets/_standard.sass */
+h3 {
+  margin-bottom: 0.75em;
+  font-size: 1.3em;
+  /* 26 / 16 = 1.62 */
+  line-height: 1.2;
+}
+
+/* line 43, ../../app/stylesheets/_standard.sass */
+h4 {
+  margin-bottom: 0.75em;
+  font-size: 1.3em;
+  /* 26 / 16 = 1.62 */
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+/* line 53, ../../app/stylesheets/_standard.sass */
+hgroup h1 {
+  margin-bottom: -0.5em;
+}
+/* line 55, ../../app/stylesheets/_standard.sass */
+hgroup h2 {
+  margin-bottom: 1.25em;
+  font-size: 1.3em;
+}
+
+/* TYPOGRAPHY ----------------------------------------------------------- */
+/* line 61, ../../app/stylesheets/_standard.sass */
+p, ul, ol, dl, table, div.vcard, time {
+  font-size: 0.81em;
+  /* 13 / 16 = .81 */
+}
+
+/* line 65, ../../app/stylesheets/_standard.sass */
+ul p, ol p, ul time, ol time, p time, td time {
+  font-size: 1em;
+}
+
+/* line 68, ../../app/stylesheets/_standard.sass */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 71, ../../app/stylesheets/_standard.sass */
+blockquote {
+  font-style: normal;
+}
+
+/* line 75, ../../app/stylesheets/_standard.sass */
+li ul, li ol {
+  margin-bottom: 1.5em;
+}
+
+/* line 78, ../../app/stylesheets/_standard.sass */
+ul, ol {
+  margin-bottom: 1.5em;
+}
+
+/* line 81, ../../app/stylesheets/_standard.sass */
+ul {
+  list-style-type: disc;
+}
+
+/* line 84, ../../app/stylesheets/_standard.sass */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 87, ../../app/stylesheets/_standard.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 90, ../../app/stylesheets/_standard.sass */
+em, dfn {
+  font-style: italic;
+}
+
+/* LINKS ------------------------------------------------------------------ */
+/* line 95, ../../app/stylesheets/_standard.sass */
+a {
+  outline: none;
+  color: #336699;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 100, ../../app/stylesheets/_standard.sass */
+a:visited {
+  outline: none;
+  color: #336699;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 105, ../../app/stylesheets/_standard.sass */
+a:hover {
+  text-decoration: none;
+  color: #264d73;
+}
+/* line 108, ../../app/stylesheets/_standard.sass */
+a:active, a:focus {
+  position: relative;
+  top: 1px;
+  color: #264d73;
+}
+
+/* line 113, ../../app/stylesheets/_standard.sass */
+h3 a, h4 a {
+  font-weight: normal;
+}
+
+/* IMAGES AND VIDEOS ----------------------------------------------------- */
+/* line 118, ../../app/stylesheets/_standard.sass */
+.img {
+  margin-bottom: 1.5em;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+/* line 123, ../../app/stylesheets/_standard.sass */
+.img img {
+  max-width: 100%;
+}
+
+/* LAYOUT -------------------------------------------------------------- */
+/* line 128, ../../app/stylesheets/_standard.sass */
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 131, ../../app/stylesheets/_standard.sass */
+#page, .container {
+  width: 100%;
+}
+
+/* line 134, ../../app/stylesheets/_standard.sass */
+.content {
+  position: relative;
+  width: 80%;
+  /* 940px */
+  min-width: 640px;
+  max-width: 1200px;
+  margin: 0 auto 1.5em auto;
+}
+/* line 141, ../../app/stylesheets/_standard.sass */
+.content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* line 150, ../../app/stylesheets/_standard.sass */
+section.content-main {
+  float: left;
+  width: 57%;
+  /* 540 / 940 = .57 */
+}
+/* line 154, ../../app/stylesheets/_standard.sass */
+section.content-sub {
+  float: right;
+  width: 38%;
+  /* 340 / 940 = .36 */
+}
+
+/* GLOBAL ELEMENTS --------------------------------------------------- */
+/* line 161, ../../app/stylesheets/_standard.sass */
+.group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Boxes */
+/* line 171, ../../app/stylesheets/_standard.sass */
+.box {
+  margin-bottom: 1.5em;
+  padding: 15px;
+  background-color: #e6e6e6;
+  border: 1px solid #dddddd;
+}
+
+/* MEDIA QUIERIES --------------------------------------------------------- */
+/* line 179, ../../app/stylesheets/_standard.sass */
+.content-main {
+  line-height: 1.8;
+}
+
+/* line 182, ../../app/stylesheets/_standard.sass */
+.content-sub {
+  line-height: 1.6;
+}
+
+@media all and (max-width : 1000px) {
+  /* line 186, ../../app/stylesheets/_standard.sass */
+  .content-main {
+    line-height: 1.6;
+  }
+
+  /* line 188, ../../app/stylesheets/_standard.sass */
+  .content-sub {
+    line-height: 1.5;
+  }
+}
+
+@media all and (max-width : 900px) {
+  /* line 193, ../../app/stylesheets/_standard.sass */
+  .content-main {
+    line-height: 1.5;
+  }
+
+  /* line 195, ../../app/stylesheets/_standard.sass */
+  .content-sub {
+    line-height: 1.4;
+  }
+}
+
+@media all and (max-width : 800px) {
+  /* line 200, ../../app/stylesheets/_standard.sass */
+  .content-main {
+    line-height: 1.4;
+  }
+
+  /* line 202, ../../app/stylesheets/_standard.sass */
+  .content-sub {
+    line-height: 1.3;
+  }
+}
+
+/* borderradius */
+/* line 208, ../../app/stylesheets/_standard.sass */
+.box {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* No alternative required */
+/* csstransitions */
+/* line 217, ../../app/stylesheets/_standard.sass */
+.csstransitions a {
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+/* No alternative required */
+/* rgba */
+/* line 227, ../../app/stylesheets/_standard.sass */
+.rgba .box {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Fallback in declaration above */
+/* line 233, ../../app/stylesheets/_standard.sass */
+#notification div {
+  text-align: center;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+/* line 240, ../../app/stylesheets/_standard.sass */
+#notification .error, #notification .alert {
+  color: #d8000c;
+  background-color: #ffbaba;
+}
+/* line 243, ../../app/stylesheets/_standard.sass */
+#notification .notice {
+  color: #4f8a10;
+  background-color: #dff2bf;
+}
+
+/* line 7, ../../app/stylesheets/screen.sass */
+.task {
+  width: 100%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5em;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid white;
+  -moz-box-shadow: #333333 1px 1px 2px 0;
+  -webkit-box-shadow: #333333 1px 1px 2px 0;
+  -o-box-shadow: #333333 1px 1px 2px 0;
+  box-shadow: #333333 1px 1px 2px 0;
+}
+/* line 11, ../../app/stylesheets/screen.sass */
+.task form.mark_complete {
+  display: inline;
+}
+/* line 13, ../../app/stylesheets/screen.sass */
+.task ul.tags {
+  display: inline;
+  float: right;
+  margin-top: 2px;
+}
+/* line 17, ../../app/stylesheets/screen.sass */
+.task ul.tags li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 5px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+  padding: 4px;
+  background-color: #e7ebf9;
+  border: 1px solid #bccaf0;
+}
+
+/* line 23, ../../app/stylesheets/screen.sass */
+ul#complete li.task {
+  text-decoration: line-through;
+}

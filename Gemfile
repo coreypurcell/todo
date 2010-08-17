@@ -10,6 +10,8 @@ end
 
 gem "haml", ">= 3.0.12"
 gem "haml-rails"
+gem 'acts-as-taggable-on'
+gem 'compass', ">= 0.10.4"
 # Use unicorn as the web server
 # gem 'unicorn'
 

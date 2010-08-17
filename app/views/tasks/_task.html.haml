@@ -3,5 +3,8 @@
     = form_tag complete_task_path(@list.id, task.id), :class => "mark_complete", :remote => true do
       = check_box_tag "complete", "1", false, "data-remote".to_sym => true, :action => complete_task_path(@list.id, task.id)
   = "#{task.description}" 
+  %ul.tags
+    - task.tag_list.each do |tag|
+      %li=tag
   
 

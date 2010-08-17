@@ -28,9 +28,12 @@ GEM
       activemodel (= 3.0.0.rc)
       activesupport (= 3.0.0.rc)
     activesupport (3.0.0.rc)
+    acts-as-taggable-on (2.0.6)
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
     builder (2.1.2)
+    compass (0.10.4)
+      haml (>= 3.0.4)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -95,6 +98,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on
+  compass (>= 0.10.4)
   factory_girl_rails (>= 1.0.0)
   haml (>= 3.0.12)
   haml-rails
