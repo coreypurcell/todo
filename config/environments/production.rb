@@ -48,5 +48,8 @@ Todo::Application.configure do
   config.active_support.deprecation = :notify
 
   Sass::Plugin.options[:always_check] = false
+  Sass::Plugin.options.merge!(:cache => true, :never_update => true) 
+  Sass::Plugin.update_stylesheets 
+  
 
 end
