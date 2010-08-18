@@ -4,4 +4,9 @@ class Task < ActiveRecord::Base
   scope :completed, where(:completed => true)
   scope :incomplete, where(:completed => false)
   default_scope order(:position)
+
+  def toggle_completed
+    self.update_attributes(:completed => !self.completed,
+                           :completed_on => Time.now)
+  end
 end
