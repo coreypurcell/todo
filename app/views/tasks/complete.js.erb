@@ -1,4 +1,2 @@
-$("ul#incomplete").html("<%= escape_javascript(render(@list.tasks.incomplete)) %>");
-$("ul#complete").html("<%= escape_javascript(render(@list.tasks.completed)) %>");
-$("#task_<%="#{@task.id}"%>").effect("highlight");
+$("ul#tasks").html("<%= escape_javascript(render(@list.tasks)) %>");
 

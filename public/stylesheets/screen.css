@@ -459,25 +459,32 @@ form.edit_task ul input[type=submit] {
 }
 
 /* line 37, ../../app/stylesheets/screen.sass */
-ul#complete li.task {
-  text-decoration: line-through;
+.task.completed {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5em;
+  padding: 5px;
+  background-color: #d1d4d9;
+  border: 1px solid #d1d4d9;
 }
 
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 41, ../../app/stylesheets/screen.sass */
 .task .notes {
   display: none;
 }
 
-/* line 44, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 form.new_task textarea {
   width: 351px;
   height: 40px;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
 form.new_task input[type=text] {
   width: 350px;
 }
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 form.new_task ul {
   margin-left: 0;
   margin-left: 0;

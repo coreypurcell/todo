@@ -34,7 +34,7 @@ class TasksController < ApplicationController
   def complete
     @list = List.find(params[:list_id])
     @task = @list.tasks.find(params[:id])
-    @task.completed = true
+    @task.completed = !@task.completed
     @task.save
     respond_with( @task, :location => list_path(@list) )
   end
