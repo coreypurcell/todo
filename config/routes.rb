@@ -3,9 +3,11 @@ Todo::Application.routes.draw do
 
   resources :lists do
     resources :tasks
+    post :prioritize_tasks, :on => :collection
   end
 
   match 'lists/:list_id/tasks/:id/complete' => 'tasks#complete', :as => :complete_task
+
 
   root :to => "lists#index"
   

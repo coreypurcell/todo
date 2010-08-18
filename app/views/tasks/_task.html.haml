@@ -1,4 +1,5 @@
 =content_tag_for(:li, task, :class => "#{'completed' if task.completed?}") do 
+  %span.handle= image_tag 'sort.png' 
   = form_tag complete_task_path(@list.id, task.id), :class => "mark_complete", :remote => true do
     = check_box_tag "complete", "1", task.completed?, "data-remote".to_sym => true, :action => complete_task_path(@list.id, task.id)
   = "#{task.description}" 

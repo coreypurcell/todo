@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.0.0.rc)
     activesupport (3.0.0.rc)
     acts-as-taggable-on (2.0.6)
+    acts_as_list (0.1.2)
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
     builder (2.1.2)
@@ -99,6 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  acts_as_list
   compass (>= 0.10.4)
   factory_girl_rails (>= 1.0.0)
   haml (>= 3.0.12)

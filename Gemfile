@@ -12,7 +12,7 @@ gem "haml", ">= 3.0.12"
 gem "haml-rails"
 gem 'acts-as-taggable-on'
 gem 'compass', ">= 0.10.4"
-
+gem 'acts_as_list'
 # Use unicorn as the web server
 # gem 'unicorn'
 

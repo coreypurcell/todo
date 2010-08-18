@@ -49,4 +49,15 @@ class ListsController < ApplicationController
     end
     redirect_to lists_path
   end
+
+  def prioritize_tasks
+    list = List.find(params[:id])
+    tasks = list.tasks
+    tasks.each do |task|
+      task.position = params['task'].index(task.id.to_s) + 1
+      task.save
+    end
+    render :nothing => true
+  end
+    
 end
