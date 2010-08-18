@@ -12,18 +12,24 @@
  *http://twitter.com/malarkey
  *
  *SCREEN.CSS
+=sans-family
+  :font-family Verdana, Helvetica, Arial, sans-serif
 
+=serif-family
+  :font-family Palatino, Garamond, 'Times New Roman', Times, serif 
 /* BODY ------------------------------------------------------------------
 
 body
   background-color: rgb(240, 240, 240)
-  font: 100%/1.4 Georgia, Times, serif
+  font: 100%/1.4
+  +sans-family
   color: rgb(50, 50, 50)
   text-shadow: 0 1px 0 rgb(255, 255, 255)
 
 /* HEADINGS --------------------------------------------------------------
 
 h1, h2, h3, h4, h5, h6
+  +serif-family
   font-weight: normal
   color: rgb(68, 68, 68)
 

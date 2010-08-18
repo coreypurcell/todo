@@ -72,22 +72,24 @@ a img {
  *
  *SCREEN.CSS */
 /* BODY ------------------------------------------------------------------ */
-/* line 18, ../../app/stylesheets/_standard.sass */
+/* line 22, ../../app/stylesheets/_standard.sass */
 body {
   background-color: #f0f0f0;
-  font: 100%/1.4 Georgia, Times, serif;
+  font: 100%/1.4;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #323232;
   text-shadow: 0 1px 0 white;
 }
 
 /* HEADINGS -------------------------------------------------------------- */
-/* line 26, ../../app/stylesheets/_standard.sass */
+/* line 31, ../../app/stylesheets/_standard.sass */
 h1, h2, h3, h4, h5, h6 {
+  font-family: Palatino, Garamond, "Times New Roman", Times, serif;
   font-weight: normal;
   color: #444444;
 }
 
-/* line 30, ../../app/stylesheets/_standard.sass */
+/* line 36, ../../app/stylesheets/_standard.sass */
 h1, h2 {
   margin-bottom: 0.5em;
   font-size: 2em;
@@ -96,7 +98,7 @@ h1, h2 {
   letter-spacing: -1px;
 }
 
-/* line 37, ../../app/stylesheets/_standard.sass */
+/* line 43, ../../app/stylesheets/_standard.sass */
 h3 {
   margin-bottom: 0.75em;
   font-size: 1.3em;
@@ -104,7 +106,7 @@ h3 {
   line-height: 1.2;
 }
 
-/* line 43, ../../app/stylesheets/_standard.sass */
+/* line 49, ../../app/stylesheets/_standard.sass */
 h4 {
   margin-bottom: 0.75em;
   font-size: 1.3em;
@@ -115,125 +117,125 @@ h4 {
   line-height: 1.2;
 }
 
-/* line 53, ../../app/stylesheets/_standard.sass */
+/* line 59, ../../app/stylesheets/_standard.sass */
 hgroup h1 {
   margin-bottom: -0.5em;
 }
-/* line 55, ../../app/stylesheets/_standard.sass */
+/* line 61, ../../app/stylesheets/_standard.sass */
 hgroup h2 {
   margin-bottom: 1.25em;
   font-size: 1.3em;
 }
 
 /* TYPOGRAPHY ----------------------------------------------------------- */
-/* line 61, ../../app/stylesheets/_standard.sass */
+/* line 67, ../../app/stylesheets/_standard.sass */
 p, ul, ol, dl, table, div.vcard, time {
   font-size: 0.81em;
   /* 13 / 16 = .81 */
 }
 
-/* line 65, ../../app/stylesheets/_standard.sass */
+/* line 71, ../../app/stylesheets/_standard.sass */
 ul p, ol p, ul time, ol time, p time, td time {
   font-size: 1em;
 }
 
-/* line 68, ../../app/stylesheets/_standard.sass */
+/* line 74, ../../app/stylesheets/_standard.sass */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 71, ../../app/stylesheets/_standard.sass */
+/* line 77, ../../app/stylesheets/_standard.sass */
 blockquote {
   font-style: normal;
 }
 
-/* line 75, ../../app/stylesheets/_standard.sass */
+/* line 81, ../../app/stylesheets/_standard.sass */
 li ul, li ol {
   margin-bottom: 1.5em;
 }
 
-/* line 78, ../../app/stylesheets/_standard.sass */
+/* line 84, ../../app/stylesheets/_standard.sass */
 ul, ol {
   margin-bottom: 1.5em;
 }
 
-/* line 81, ../../app/stylesheets/_standard.sass */
+/* line 87, ../../app/stylesheets/_standard.sass */
 ul {
   list-style-type: disc;
 }
 
-/* line 84, ../../app/stylesheets/_standard.sass */
+/* line 90, ../../app/stylesheets/_standard.sass */
 ol {
   list-style-type: decimal;
 }
 
-/* line 87, ../../app/stylesheets/_standard.sass */
+/* line 93, ../../app/stylesheets/_standard.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 90, ../../app/stylesheets/_standard.sass */
+/* line 96, ../../app/stylesheets/_standard.sass */
 em, dfn {
   font-style: italic;
 }
 
 /* LINKS ------------------------------------------------------------------ */
-/* line 95, ../../app/stylesheets/_standard.sass */
+/* line 101, ../../app/stylesheets/_standard.sass */
 a {
   outline: none;
   color: #336699;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 100, ../../app/stylesheets/_standard.sass */
+/* line 106, ../../app/stylesheets/_standard.sass */
 a:visited {
   outline: none;
   color: #336699;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 105, ../../app/stylesheets/_standard.sass */
+/* line 111, ../../app/stylesheets/_standard.sass */
 a:hover {
   text-decoration: none;
   color: #264d73;
 }
-/* line 108, ../../app/stylesheets/_standard.sass */
+/* line 114, ../../app/stylesheets/_standard.sass */
 a:active, a:focus {
   position: relative;
   top: 1px;
   color: #264d73;
 }
 
-/* line 113, ../../app/stylesheets/_standard.sass */
+/* line 119, ../../app/stylesheets/_standard.sass */
 h3 a, h4 a {
   font-weight: normal;
 }
 
 /* IMAGES AND VIDEOS ----------------------------------------------------- */
-/* line 118, ../../app/stylesheets/_standard.sass */
+/* line 124, ../../app/stylesheets/_standard.sass */
 .img {
   margin-bottom: 1.5em;
   padding: 10px;
   background-color: white;
   border: 1px solid #dddddd;
 }
-/* line 123, ../../app/stylesheets/_standard.sass */
+/* line 129, ../../app/stylesheets/_standard.sass */
 .img img {
   max-width: 100%;
 }
 
 /* LAYOUT -------------------------------------------------------------- */
-/* line 128, ../../app/stylesheets/_standard.sass */
+/* line 134, ../../app/stylesheets/_standard.sass */
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 131, ../../app/stylesheets/_standard.sass */
+/* line 137, ../../app/stylesheets/_standard.sass */
 #page, .container {
   width: 100%;
 }
 
-/* line 134, ../../app/stylesheets/_standard.sass */
+/* line 140, ../../app/stylesheets/_standard.sass */
 .content {
   position: relative;
   width: 80%;
@@ -242,7 +244,7 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
   max-width: 1200px;
   margin: 0 auto 1.5em auto;
 }
-/* line 141, ../../app/stylesheets/_standard.sass */
+/* line 147, ../../app/stylesheets/_standard.sass */
 .content:after {
   content: "\0020";
   display: block;
@@ -252,13 +254,13 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
   overflow: hidden;
 }
 
-/* line 150, ../../app/stylesheets/_standard.sass */
+/* line 156, ../../app/stylesheets/_standard.sass */
 section.content-main {
   float: left;
   width: 57%;
   /* 540 / 940 = .57 */
 }
-/* line 154, ../../app/stylesheets/_standard.sass */
+/* line 160, ../../app/stylesheets/_standard.sass */
 section.content-sub {
   float: right;
   width: 38%;
@@ -266,7 +268,7 @@ section.content-sub {
 }
 
 /* GLOBAL ELEMENTS --------------------------------------------------- */
-/* line 161, ../../app/stylesheets/_standard.sass */
+/* line 167, ../../app/stylesheets/_standard.sass */
 .group:after {
   content: "\0020";
   display: block;
@@ -277,7 +279,7 @@ section.content-sub {
 }
 
 /* Boxes */
-/* line 171, ../../app/stylesheets/_standard.sass */
+/* line 177, ../../app/stylesheets/_standard.sass */
 .box {
   margin-bottom: 1.5em;
   padding: 15px;
@@ -286,54 +288,54 @@ section.content-sub {
 }
 
 /* MEDIA QUIERIES --------------------------------------------------------- */
-/* line 179, ../../app/stylesheets/_standard.sass */
+/* line 185, ../../app/stylesheets/_standard.sass */
 .content-main {
   line-height: 1.8;
 }
 
-/* line 182, ../../app/stylesheets/_standard.sass */
+/* line 188, ../../app/stylesheets/_standard.sass */
 .content-sub {
   line-height: 1.6;
 }
 
 @media all and (max-width : 1000px) {
-  /* line 186, ../../app/stylesheets/_standard.sass */
+  /* line 192, ../../app/stylesheets/_standard.sass */
   .content-main {
     line-height: 1.6;
   }
 
-  /* line 188, ../../app/stylesheets/_standard.sass */
+  /* line 194, ../../app/stylesheets/_standard.sass */
   .content-sub {
     line-height: 1.5;
   }
 }
 
 @media all and (max-width : 900px) {
-  /* line 193, ../../app/stylesheets/_standard.sass */
+  /* line 199, ../../app/stylesheets/_standard.sass */
   .content-main {
     line-height: 1.5;
   }
 
-  /* line 195, ../../app/stylesheets/_standard.sass */
+  /* line 201, ../../app/stylesheets/_standard.sass */
   .content-sub {
     line-height: 1.4;
   }
 }
 
 @media all and (max-width : 800px) {
-  /* line 200, ../../app/stylesheets/_standard.sass */
+  /* line 206, ../../app/stylesheets/_standard.sass */
   .content-main {
     line-height: 1.4;
   }
 
-  /* line 202, ../../app/stylesheets/_standard.sass */
+  /* line 208, ../../app/stylesheets/_standard.sass */
   .content-sub {
     line-height: 1.3;
   }
 }
 
 /* borderradius */
-/* line 208, ../../app/stylesheets/_standard.sass */
+/* line 214, ../../app/stylesheets/_standard.sass */
 .box {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -342,7 +344,7 @@ section.content-sub {
 
 /* No alternative required */
 /* csstransitions */
-/* line 217, ../../app/stylesheets/_standard.sass */
+/* line 223, ../../app/stylesheets/_standard.sass */
 .csstransitions a {
   -webkit-transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
@@ -352,13 +354,13 @@ section.content-sub {
 
 /* No alternative required */
 /* rgba */
-/* line 227, ../../app/stylesheets/_standard.sass */
+/* line 233, ../../app/stylesheets/_standard.sass */
 .rgba .box {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Fallback in declaration above */
-/* line 233, ../../app/stylesheets/_standard.sass */
+/* line 239, ../../app/stylesheets/_standard.sass */
 #notification div {
   text-align: center;
   border: 1px solid;
@@ -367,12 +369,12 @@ section.content-sub {
   background-repeat: no-repeat;
   background-position: 10px center;
 }
-/* line 240, ../../app/stylesheets/_standard.sass */
+/* line 246, ../../app/stylesheets/_standard.sass */
 #notification .error, #notification .alert {
   color: #d8000c;
   background-color: #ffbaba;
 }
-/* line 243, ../../app/stylesheets/_standard.sass */
+/* line 249, ../../app/stylesheets/_standard.sass */
 #notification .notice {
   color: #4f8a10;
   background-color: #dff2bf;
@@ -468,23 +470,27 @@ form.edit_task ul input[type=submit] {
   padding: 5px;
   background-color: #d1d4d9;
   border: 1px solid #d1d4d9;
+  -moz-box-shadow: #d1d4d9 0px 0px 0px 0;
+  -webkit-box-shadow: #d1d4d9 0px 0px 0px 0;
+  -o-box-shadow: #d1d4d9 0px 0px 0px 0;
+  box-shadow: #d1d4d9 0px 0px 0px 0;
 }
 
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 .task .notes {
   display: none;
 }
 
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 form.new_task textarea {
   width: 351px;
   height: 40px;
 }
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 form.new_task input[type=text] {
   width: 350px;
 }
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 51, ../../app/stylesheets/screen.sass */
 form.new_task ul {
   margin-left: 0;
   margin-left: 0;
