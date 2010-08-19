@@ -500,3 +500,9 @@ form.new_task ul li {
   list-style-type: none;
   padding-left: 25px;
 }
+
+/* line 55, ../../app/stylesheets/screen.sass */
+.task .completed_on {
+  font-size: 50%;
+  margin-right: 1em;
+}

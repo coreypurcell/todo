@@ -38,6 +38,7 @@ gem 'acts_as_list'
 group :test do
   gem "factory_girl_rails", ">= 1.0.0", :group => :test
   gem "rspec-rails", ">= 2.0.0.beta.12", :group => :test
+  gem 'timecop'
 end
 
 group :production do

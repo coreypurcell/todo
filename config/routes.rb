@@ -4,6 +4,7 @@ Todo::Application.routes.draw do
   resources :lists do
     resources :tasks
     post :prioritize_tasks, :on => :collection
+    get :archives, :on => :member
   end
 
   match 'lists/:list_id/tasks/:id/complete' => 'tasks#complete', :as => :complete_task

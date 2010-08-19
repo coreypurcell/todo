@@ -1,2 +1,2 @@
-$("ul#tasks").html("<%= escape_javascript(render(@list.tasks)) %>");
+$("ul#tasks").html("<%= escape_javascript(render(@list.tasks.active)) %>");
 

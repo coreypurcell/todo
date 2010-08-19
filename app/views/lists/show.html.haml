@@ -2,7 +2,7 @@
 %p= @list.description
 
 %ul#tasks
-  = render @list.tasks
+  = render @list.tasks.active
 
 
 = form_for [@list, @task], :remote => true do |f|
@@ -17,6 +17,8 @@
       =f.submit
 %hr
 = link_to "Back to list index", lists_path
+|
+= link_to "Archived To Do's", archives_list_path(@list)
 
 -content_for :javascript do
   = render 'sort'

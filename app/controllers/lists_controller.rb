@@ -50,9 +50,13 @@ class ListsController < ApplicationController
     redirect_to lists_path
   end
 
+  def archives
+    @list = List.find(params[:id])
+  end
+
   def prioritize_tasks
     list = List.find(params[:id])
-    tasks = list.tasks
+    tasks = list.tasks.active
     tasks.each do |task|
       task.position = params['task'].index(task.id.to_s) + 1
       task.save
