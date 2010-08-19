@@ -37,15 +37,5 @@ describe Task do
     end
   end
 
-  describe "default scope" do
-    it "should only show active tasks" do
-      Factory.create(:task)
-      Factory.create(:completed_task, :completed_on => Time.now)
-      Factory.create(:completed_task, :completed_on => Date.today - 10)
-      Factory.create(:task, :completed_on => Date.today - 10)
-      
-      Task.all.count.should == 3
-    end
-  end
 
 end
