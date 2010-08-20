@@ -8,7 +8,7 @@ class TasksController < ApplicationController
     @task = @list.tasks.new(params[:task])
     if @task.save
       flash[:notice] = "Task created"
-    else
+   else
       flash[:error] = "Could not add task"
     end
     respond_with( @task, :location => list_path(@list) )
@@ -36,6 +36,7 @@ class TasksController < ApplicationController
     @task = @list.tasks.find(params[:id])
     @task.toggle_completed
     @task.save
+    @tasks = @list.tasks.active
     respond_with( @task, :location => list_path(@list) )
   end
 end

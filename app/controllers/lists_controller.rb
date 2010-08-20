@@ -23,6 +23,8 @@ class ListsController < ApplicationController
   def show
     @list = List.find(params[:id])
     @task = @list.tasks.new
+    @tasks = @list.tasks.active
+    @tags = @list.tasks.tag_counts_on(:tags)
   end
 
   def edit
@@ -52,6 +54,14 @@ class ListsController < ApplicationController
 
   def archives
     @list = List.find(params[:id])
+  end
+
+  def filter
+    @list = List.find(params[:list_id])
+    @task = @list.tasks.new
+    @tasks = @list.tasks.tagged_with(params[:tag])
+    @tags = @list.tasks.tag_counts_on(:tags)
+    render :show
   end
 
   def prioritize_tasks

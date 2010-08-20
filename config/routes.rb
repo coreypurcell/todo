@@ -7,6 +7,8 @@ Todo::Application.routes.draw do
     get :archives, :on => :member
   end
 
+  match 'lists/:list_id/tagged/:tag' => 'lists#filter', :as => :tagged_task
+
   match 'lists/:list_id/tasks/:id/complete' => 'tasks#complete', :as => :complete_task
 
 

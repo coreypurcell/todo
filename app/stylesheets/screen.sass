@@ -14,15 +14,28 @@
   img
     padding-left: 5px
     padding-right: 5px
-  ul.tags
+ul.tags
+  display: inline
+  float: right
+  margin-top: 2px
+  li
     display: inline
-    float: right
-    margin-top: 2px
-    li
-      display: inline
-      list-style-type: none
-      padding-right: 5px
-      @include box(rgb(231,235,249),rgb(188,202,240), 7px, 4px, 0)
+    list-style-type: none
+    padding-right: 5px
+    @include box(rgb(231,235,249),rgb(188,202,240), 7px, 4px, 0)
+
+ul#tasks
+  margin-top: 15px
+
+ul#tag_list
+  display: inline
+  margin-top: 2px
+  li
+    display: inline
+    list-style-type: none
+    padding-right: 5px
+    @include box(rgb(231,235,249),rgb(188,202,240), 7px, 4px, 0)
+
 
 form.edit_task ul
   width: 100%
