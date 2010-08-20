@@ -1,2 +1,3 @@
-$("ul#tasks").html("<%= escape_javascript(render(@tasks)) %>");
+//$("ul#tasks").html("<%= escape_javascript(render(@tasks)) %>");
+  $("#task_<%= @task.id %>").toggleClass("completed").find("input:checkbox").toggleCheck();
 

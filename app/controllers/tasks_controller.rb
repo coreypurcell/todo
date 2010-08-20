@@ -31,6 +31,13 @@ class TasksController < ApplicationController
     respond_with( @task, :location => list_path(@list) )
   end
 
+  def destroy
+    list = List.find(params[:list_id])
+    @task = list.tasks.find(params[:id])
+    @task.destroy
+    respond_with(@task, :location => list_path(@list))
+  end
+
   def complete
     @list = List.find(params[:list_id])
     @task = @list.tasks.find(params[:id])

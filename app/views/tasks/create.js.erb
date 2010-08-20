@@ -1,3 +1,2 @@
-<%= render :template => 'tasks/complete' %>
-
+$("ul#tasks").prepend("<%= escape_javascript(render @task) %>");
 $('form.new_task').clearForm();

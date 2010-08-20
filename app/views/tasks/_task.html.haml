@@ -6,7 +6,10 @@
   - unless task.notes.blank?
     = image_tag "notes.png"
 
-  = link_to "Edit", edit_list_task_path(@list.id, task.id)
+  %a{:href => edit_list_task_path(@list.id, task.id)}
+    =image_tag 'edit.png'
+  %a{:href => list_task_path(@list.id, task.id), 'data-method' => "delete", 'data-remote' => "true", :rel => "nofollow"}
+    =image_tag 'delete.png'
   %ul.tags
     - task.tag_list.each do |tag|
       %li=tag
