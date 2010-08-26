@@ -4,9 +4,9 @@
 %ul#tag_list
   - @tags.each do |tag|
     %li= link_to_unless_current tag.name, tagged_task_path(@list.id,tag.name)
+
 %ul#tasks
   = render @tasks
-
 
 = form_for [@list, @task], :remote => true do |f|
   %ul

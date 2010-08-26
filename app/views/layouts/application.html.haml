@@ -3,17 +3,23 @@
   %head
     %title Todo
     = stylesheet_link_tag 'screen' 
+    = javascript_include_tag "prototype.s2.min.js"
     = javascript_include_tag :defaults
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"
     = csrf_meta_tag
-  %body.content
-    #notification
-      -if flash[:notice]
-        .notice= flash[:notice]
-      -if flash[:alert]
-        .alert= flash[:alert] 
-      -if flash[:error]
-        .error= flash[:error]
-    = yield
+  %body.container
+    .content 
+      %section.content-main
+        #notification
+          -if flash[:notice]
+            .notice= flash[:notice]
+          -if flash[:alert]
+            .alert= flash[:alert] 
+          -if flash[:error]
+            .error= flash[:error]
+          #loading Loading ...
+        = yield
 
+      %section.content-sub
+        = render :partial => "calendars/calendar"
     = yield :javascript

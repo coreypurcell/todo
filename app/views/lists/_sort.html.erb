@@ -1,5 +1,5 @@
 <%= javascript_tag do %>
-     $('#tasks').sortable(
+     $j('#tasks').sortable(
         {
           axis: 'y', 
           dropOnEmpty:false, 
@@ -9,14 +9,26 @@
           opacity: 0.4,
           scroll: true,
           update: function(){
-            $.ajax({
+            $j.ajax({
                 type: 'post', 
-                data: $('#tasks').sortable('serialize') + '&id=<%=@list.id-%>', 
+                data: $j('#tasks').sortable('serialize') + '&id=<%=@list.id-%>', 
                 dataType: 'script', 
                 complete: function(request){
                   },
                 url: '/lists/prioritize_tasks'})
             }
           })
+          //$("#tasks").selectable(
+          //selected: function(event, ui) { $("li.task.ui-selected").focus(); },
+          //unselected: function(event, ui) {}
+          //          );
+          $j("#tasks li").keyup( function(){
+            if (e.keyCode == '46' || e.keyCode == '8')
+            {
+              console.log("Delete pressed");
+              e.preventDefault();
+            }
+          });
+
     <% end %>
 
